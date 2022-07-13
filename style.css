@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.lateral {
+    width: 30%;
+    background-color: #2C3639;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.principal {
+    flex-grow: 2;
+    background-color: #A27B5C;
+    min-height: 100vh;
+}
+
+.elemento {
+    width: 150px;
+    height: 150px;
+    background-color: #3F4E4F;
+}
+
+@media (max-width:640px) {
+
+    body {
+        flex-direction: column;
+    }
+
+   .lateral {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    order: 2;
+   }
+
+}
